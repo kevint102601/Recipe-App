@@ -10,22 +10,43 @@ label {
 }
 
 header {
+  background: white;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font: normal 4em 'Playfair Display SC', serif;
+  text-align:center;
+}
+
+th, td {
+  padding: 10px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  object-fit: scale-down;
+}
+
+/* zebra striping */
+
+tbody tr:nth-child(odd) {
+  background-color: #fff0c7;
 }
 
 /* typography */
 
 html {
-  font-family: 'helvetica neue', sans-serif;
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
 }
 
 thead th, tfoot th {
-  font-family: 'Rock Salt';
+  font-family: 'Rock Salt', cursive;
 }
 
 th {
   letter-spacing: 2px;
-  padding: 10px;
 }
 
 td {
@@ -33,11 +54,14 @@ td {
   overflow-x:hidden;
   overflow-y:hidden;
   font-size: 12px;
-  padding: 10px;
+}
+
+tbody td {
   text-align: center;
 }
 
-/* table */
+
+/* spacing */
 
 table {
   table-layout: fixed;
@@ -45,6 +69,7 @@ table {
   border-collapse: collapse;
   overflow:hidden;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
 }
 
 .content_td p {
@@ -55,28 +80,53 @@ table {
 }
 
 /* Column Size for thead */
-th:nth-child(n){
-  border: 2px solid orange;
-  margin-bottom: 1px;
-  width:10%
-}
-th:nth-child(4){
-  
-  width:30%
-}
-th:nth-child(5){
-  width:30%
-}
-th:nth-child(even){
-  background-color: lightyellow;
+
+thead th:nth-child(1) {
+  width: 10%;
 }
 
-h1 {
-  font-size: 64px;
-  text-align: center;
-  Font-Family: "Playfair Display SC"
+thead th:nth-child(2) {
+  width: 10%;
 }
 
+thead th:nth-child(3) {
+  width: 10%;
+}
 
+thead th:nth-child(4) {
+  width: 29%;
+}
+
+thead th:nth-child(5) {
+  width: 29%;
+}
+
+thead th:nth-child(6) {
+  width: 12%;
+}
 
 /* Column size for tbody */
+
+tbody td:nth-child(1) {
+  width: 10%;
+}
+
+tbody td:nth-child(2) {
+  width: 10%;
+}
+
+tbody td:nth-child(3) {
+  width: 10%;
+}
+
+tbody td:nth-child(4) {
+  width: 29%;
+}
+
+tbody td:nth-child(5) {
+  width: 29%;
+}
+
+tbody td:nth-child(6) {
+  width: 12%;
+}
